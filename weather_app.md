@@ -5,7 +5,7 @@ Not everyone's body temperature fluctuates the same. What's considered hot for c
 <br>
 
 
-![](http://i.giphy.com/26u6dryuZH98z5KuY.gif =250x250)
+![](http://i.giphy.com/26u6dryuZH98z5KuY.gif =100x100)
 
 ## User Story
 
