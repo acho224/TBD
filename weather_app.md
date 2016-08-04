@@ -40,7 +40,7 @@ https://www.wunderground.com/weather/api/
 
 ## ERD
 
-<img src="/images/weather_app.erd.jpg" width="300" height="auto">
+<img src="/images/weather_app_erd.jpg" width="300" height="auto">
 
 ## Approach
 
