@@ -1,11 +1,15 @@
 # Name - TBD
 
+<br>
+
+<img src="http://i.giphy.com/26u6dryuZH98z5KuY.gif" width="300" height="auto">
+
+<br>
+
 ## Summary
 Not everyone's body temperature fluctuates the same. What's considered hot for certain people might be cold for others. **TBD** is a weather app that let's users know what to wear based on user settings and the current weather.
 <br>
 
-
-![](http://i.giphy.com/26u6dryuZH98z5KuY.gif =25x25)
 
 ## User Story
 
@@ -36,11 +40,18 @@ https://www.wunderground.com/weather/api/
 
 ## ERD
 
+<img src="./images/weather_app.erd.jpg" width="300" height="auto">
+
 ## Approach
 
 ## Wireframe
 
 ## Technologies Used
+
+- SQL
+- Ruby
+- Rails
+- Bootstrap
 
 ## Hurdles
 
