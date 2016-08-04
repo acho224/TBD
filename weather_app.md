@@ -40,11 +40,24 @@ https://www.wunderground.com/weather/api/
 
 ## ERD
 
-<img src="./images/weather_app.erd.jpg" width="300" height="auto">
+<img src="http://i.imgur.com/JzyDitu.jpg)" width="300" height="auto">
 
 ## Approach
 
 ## Wireframe
+
+<img src="http://i.imgur.com/bKLCKrC.jpg" width="300" height="auto">
+
+<img src="http://i.imgur.com/GNfgTRR.jpg" width="300" height="auto">
+
+<img src="http://i.imgur.com/67pTatz.jpg" width="300" height="auto">
+
+<img src="http://i.imgur.com/UySA8GU.jpg" width="300" height="auto">
+
+<img src="http://i.imgur.com/rWLqhug.jpg" width="300" height="auto">
+
+<img src="http://i.imgur.com/3WuMarQ.jpg" width="300" height="auto">
+
 
 ## Technologies Used
 
