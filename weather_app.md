@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="http://http://i.giphy.com/l2Je5hzZPPV0vkrv2.gif" width="300" height="auto">
+<img src="http://i.giphy.com/l2Je5hzZPPV0vkrv2.gif" width="300" height="auto">
 
 <br>
 
