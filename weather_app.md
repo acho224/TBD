@@ -33,7 +33,7 @@ User's start by entering some personal settings. These settings include:
 - Humidity level that is considered as humid
 - Temperature level that is considered cold
 
-These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raing is greater than 40%, a suggestion will be made to bring an umbrella.
+These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raining is greater than 40%, a suggestion will be made to bring an umbrella.
 
 ## API
 https://www.wunderground.com/weather/api/
