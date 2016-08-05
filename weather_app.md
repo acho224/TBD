@@ -27,7 +27,7 @@ Not everyone's body temperature fluctuates the same. What's considered hot for c
 
 ## Use Case
 
-User's start by entering some personal settings. These settings include: 
+User's start by logging in and entering some personal settings. These settings include: 
 
 - Temperature level that is considered hot
 - Humidity level that is considered as humid
