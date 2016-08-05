@@ -1,8 +1,8 @@
-# Name - TBD
+# TBD
 
 <br>
 
-<img src="http://i.giphy.com/26u6dryuZH98z5KuY.gif" width="300" height="auto">
+<img src="http://i.giphy.com/l2Je5hzZPPV0vkrv2.gif" width="300" height="auto">
 
 <br>
 
@@ -27,13 +27,13 @@ Not everyone's body temperature fluctuates the same. What's considered hot for c
 
 ## Use Case
 
-User's start by entering some personal settings. These settings include: 
+User's start by logging in and entering some personal settings. These settings include: 
 
 - Temperature level that is considered hot
 - Humidity level that is considered as humid
 - Temperature level that is considered cold
 
-These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raing is greater than 40%, a suggestion will be made to bring an umbrella.
+These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raining is greater than 40%, a suggestion will be made to bring an umbrella.
 
 ## API
 https://www.wunderground.com/weather/api/
