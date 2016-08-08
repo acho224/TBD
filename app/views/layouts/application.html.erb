@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TBD</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  </head>
+
+  <body>
+
+  <% if current_user %>
+    <h5>Welcome <%= current_user.fname.titleize%></h5><br>
+    <%= link_to "logout", {:controller=> "sessions", :action=> "destroy"}, :method => :delete%>
+  <%else%>
+    <h5>Welcome Guest</h5>
+  <% end %>
+
+    <%= yield %>
+
+  </body>
+
+</html>

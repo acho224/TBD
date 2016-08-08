@@ -1,0 +1,13 @@
+<h4>Please Enter Zip Code</h4><br>
+
+<div id="zipform_container">
+
+  <%= form_tag("/weather", method:"get", remote:true) do %>
+    <%= label_tag(:zipcode, "Zipcode:") %>
+    <%= text_field_tag(:zipcode) %>
+    <%= button_tag "Search", :class =>"btn_search"%>
+  <% end %>
+
+</div>
+
+
