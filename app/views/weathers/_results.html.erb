@@ -1,0 +1,31 @@
+<div id="location">
+  <p> <%=@weather_results['display_location']['full'] %></p>
+</div>
+
+<div id="img_result">
+  <img id="icon" src="<%= @weather_results['icon_url'].html_safe %>">
+</div>
+
+<div id="conditions">
+  <h4> <%= @weather_results['weather'] %> </h4>
+</div>
+
+<div id="temp">
+<h3> <span class="bold"><%= @weather_results['temp_f'] %></span><span id="small_font"> °F</span></h3>
+</div>
+
+<div id="humidity">
+  <p>Humidity: <%= @weather_results['relative_humidity'] %></p>
+</div>
+
+<div id="wind">
+  <p>Wind <%= @weather_results['wind_string'] %></p>
+</div>
+
+<div id="feels_like">
+  <p>Feels like <%= @weather_results['feelslike_f'] %> °F</p>
+</div>
+
+<div id="rain">
+  <p>Chance of rain <%= @precipitation %>%</p>
+</div>

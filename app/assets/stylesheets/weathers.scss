@@ -1,3 +1,38 @@
 // Place all the styles related to the Weathers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h3{
+  text-align: center;
+}
+#zipform_container {
+  text-align: center;
+}
+
+#results {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#small_font {
+  font-size: 15px}
+
+form {
+  margin-bottom: 0px;
+}
+
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+  margin-bottom: .5rem;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: block;
+}
+
