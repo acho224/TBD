@@ -34,8 +34,10 @@
 
 #nav_container a{
   display: block;
-  margin: 4px 50px;
+  margin: 8px 50px;
+  padding-top: 10px;
 }
+
 a {
   width: 75px;
 }

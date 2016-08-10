@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Top.create(user_id: 2, length: 'short_sleeve', weather: 'hot', url: 'http://www.yesnomaybe.co.uk/Admin/Upload/800x800/Yes-No-Maybe-Keep-Calm-and-Carry-On-Mens-T-Shirt-White-on-Green-front-800x800.jpg')
