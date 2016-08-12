@@ -8,8 +8,8 @@
   width: 97%;
   height: 100%;
   top: 60px;
-  max-width: 325px;
-  margin: 0 450px;
+  max-width: 800px;
+  left: 20%;
 }
 
 .top_img {
@@ -18,10 +18,18 @@
 }
 
 .bottom_img {
-  height:200px;
-  width: 200px;
+  max-height:200px;
+  max-width: 200px;
 }
 
 li {
   list-style-type: none;
+}
+
+.delete_btn {
+  margin-bottom: 50px;
+}
+
+#add_item {
+  display: inline-block;
 }

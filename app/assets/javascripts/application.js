@@ -14,3 +14,36 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+
+  $('#save_item').click(()=>{
+    let data = {
+    weather: $('#choose_weather').val(),
+    length:  $('#choose_length').val(),
+    table:   $('#choose_table').val(),
+    url:     $('#url_submit').val()
+    }
+    $.post('/closet', data).done(function(results){
+        console.log(results)
+        location.reload()
+      })
+    })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

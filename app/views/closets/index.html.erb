@@ -1,29 +1,58 @@
+<div class="main">
 
-<div id="closet_container">
+<div class="row" id="closet_container">
   <h4>My Closet</h4>
 
-<div id="add_item">
+<div class="row" id="add_item">
+
+<p>ADD AN ITEM</p>
+
+<select id="choose_table" name="select">
+<option disabled selected>Choose</option>
+<option>Top</option>
+<option>Bottom</option>
+</select>
+
+
+<select id="choose_length" name="select">
+<option disabled selected>Length</option>
+<option>Short</option>
+<option>Long</option>
+</select>
+
+<select id="choose_weather" name="select">
+<option disabled selected>Occasion</option>
+<option>Hot</option>
+<option>Comfortable</option>
+<option>Cold</option>
+</select>
+
+<input id="url_submit" type="text" placeholder="Enter URL Here">
+<button id="save_item">SAVE</button>
 
 </div>
 
-<div id="my_tops">
+<div class="row">
+<div class="six columns" id="my_tops">
   <p>Tops</p>
   <ul>
     <% @my_tops.each do |top| %>
       <li><img class="top_img" src="<%= top %>"></li>
-      <%= button_to "delete", @top, :method => :delete %>
+      <%= button_to "delete", @top, :method => :delete, :class => 'delete_btn'%>
     <% end %>
   </ul>
   </div>
 
-<div id="my_bottoms">
+<div class="six columns" id="my_bottoms">
   <p>Bottoms</p>
   <ul>
     <% @my_bottoms.each do |bottom| %>
-      <li class="bottom_image"><img src="<%= bottom %>"></li>
-      <%= button_to "delete", @bottom, :method => :delete %>
+      <li><img class="bottom_img" src="<%= bottom %>"></li>
+      <%= button_to "delete", @bottom, :method => :delete, :class => 'delete_btn' %>
     <% end %>
   </ul>
-</div>
 
+      </div>
+    </div>
+  </div>
 </div>

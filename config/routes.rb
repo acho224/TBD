@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'users#index'
+
+
   get 'users/show'
 
   get 'signup' => 'users#new'
@@ -12,8 +14,11 @@ Rails.application.routes.draw do
 
   get 'weather' => 'weathers#index'
 
-  get 'closet' => 'closets#index'
+  get '/closet' => 'closets#index'
+  post '/closet' => 'closets#create'
+
   resources :closet
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
