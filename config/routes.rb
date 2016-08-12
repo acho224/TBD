@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get '/closet' => 'closets#index'
   post '/closet' => 'closets#create'
-
+  delete '/closet' => 'closets#destroy'
   resources :closet
 
 

@@ -37,8 +37,8 @@
   <p>Tops</p>
   <ul>
     <% @my_tops.each do |top| %>
-      <li><img class="top_img" src="<%= top %>"></li>
-      <%= button_to "delete", @top, :method => :delete, :class => 'delete_btn'%>
+      <li><img class="top_img" src="<%= top.url %>"></li>
+      <%= button_to "delete", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :top, id: top.id}%>
     <% end %>
   </ul>
   </div>
@@ -47,8 +47,8 @@
   <p>Bottoms</p>
   <ul>
     <% @my_bottoms.each do |bottom| %>
-      <li><img class="bottom_img" src="<%= bottom %>"></li>
-      <%= button_to "delete", @bottom, :method => :delete, :class => 'delete_btn' %>
+      <li><img class="bottom_img" src="<%= bottom.url %>"></li>
+      <%= button_to "delete", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :bottom, id: bottom.id} %>
     <% end %>
   </ul>
 
