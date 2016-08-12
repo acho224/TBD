@@ -12,12 +12,11 @@ class WeathersController < ApplicationController
       @weather_results = response['current_observation']
       @precipitation = response2['forecast']['txt_forecast']['forecastday'][0]['pop']
 
-      if :current_user
+      if current_user
         @top_img_path = dress_top(@weather_results)
+        @bottoms_img_path = dress_bottom(@weather_results)
         Rails.logger.debug("url = #{@top_img_path}")
-
-        # bottoms method
-
+        Rails.logger.debug("url2 = #{@bottoms_img_path}")
       end
       # puts @weather_results['display_location']['full']
       # puts @weather_results['icon_url']
@@ -32,24 +31,49 @@ class WeathersController < ApplicationController
 
   def dress_top(weather)
     user = User.find(session[:user_id])
+    ret=""
     if weather
       puts weather["feelslike_f"]
       # conditional statement for hot, middle, cool temp
-      if weather["feelslike_f"].to_i > user.hottemp
+      if weather["feelslike_f"].to_i >= user.hottemp
         tops = user.tops.where(weather: 'hot')[0]
-        ret = tops.url
+        ret = tops ? tops.url : ""
         Rails.logger.debug("tops = #{tops.inspect}")
+      elsif weather["feelslike_f"].to_i <= user.coldtemp
+        tops = user.tops.where(weather: 'cold')[0]
+        ret = tops ? tops.url : ""
+        Rails.logger.debug("tops= #{tops.inspect}")
+      else tops = user.tops.where(weather: 'comfortable')[0]
+        ret = tops ? tops.url : ""
+        Rails.logger.debug("tops= #{tops.inspect}")
       end
     end
     ret
   end
 
   def dress_bottom(weather)
-
+    user = User.find(session[:user_id])
+    ret=""
+    if weather
+      puts weather["feelslike_f"]
+      # conditional statement for hot, middle, cool temp
+      if weather["feelslike_f"].to_i >= user.hottemp
+        bottoms = user.bottoms.where(weather: 'hot')[3]
+        ret = bottoms ? bottoms.url : ""
+        Rails.logger.debug("bottoms = #{bottoms.inspect}")
+      elsif weather["feelslike_f"].to_i <= user.coldtemp
+        bottoms = user.bottoms.where(weather: 'cold')[0]
+        ret = bottoms ? bottoms.url : ""
+        Rails.logger.debug("bottoms = #{bottoms.inspect}")
+      else bottoms = user.bottoms.where(weather: 'comfortable')[0]
+        ret = bottoms ? bottoms.url : ""
+        Rails.logger.debug("bottoms = #{bottoms.inspect}")
+     end
+    end
+    ret
   end
 
 end
-
 
 
 

@@ -15,11 +15,20 @@
     <%= image_tag "tbd.png", :id => "logo_image"  %>
 
     <div id="nav_container">
+
+    <% if session[:user_id] %>
+      <a href="/">Home</a>
+      <a href="/weather">Weather</a>
+      <a href="/closet">My Closet</a>
+
+    <% else %>
       <a href="/">Home</a>
       <a href="/signup">Sign Up</a>
       <a href="/login">Login</a>
       <a href="/weather">Weather</a>
       <a href="/closet">My Closet</a>
+    <% end %>
+
     </div>
   </div>
 

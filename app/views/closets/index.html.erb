@@ -1,8 +1,29 @@
 
 <div id="closet_container">
   <h4>My Closet</h4>
-</div>
 
 <div id="add_item">
+
+</div>
+
+<div id="my_tops">
+  <p>Tops</p>
+  <ul>
+    <% @my_tops.each do |top| %>
+      <li><img class="top_img" src="<%= top %>"></li>
+      <%= button_to "delete", @top, :method => :delete %>
+    <% end %>
+  </ul>
+  </div>
+
+<div id="my_bottoms">
+  <p>Bottoms</p>
+  <ul>
+    <% @my_bottoms.each do |bottom| %>
+      <li class="bottom_image"><img src="<%= bottom %>"></li>
+      <%= button_to "delete", @bottom, :method => :delete %>
+    <% end %>
+  </ul>
+</div>
 
 </div>

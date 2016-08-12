@@ -7,10 +7,10 @@ h3{
 #zipform_container {
   text-align: center;
   position: absolute;
-  width: 97%;
+  width: 100%;
   top: 60px;
   max-width: 325px;
-  margin: 0 450px;
+  margin: 0 469px;
 }
 
 #results {
@@ -39,4 +39,8 @@ input {
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
   display: block;
+}
+
+#dress_container {
+  margin-top: 50px;
 }
