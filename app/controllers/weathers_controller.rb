@@ -36,14 +36,14 @@ class WeathersController < ApplicationController
       puts weather["feelslike_f"]
       # conditional statement for hot, middle, cool temp
       if weather["feelslike_f"].to_i >= user.hottemp
-        tops = user.tops.where(weather: 'hot')[0]
+        tops = user.tops.where(weather: 'Hot')[rand(user.tops.where(weather: 'Hot').size)]
         ret = tops ? tops.url : ""
         Rails.logger.debug("tops = #{tops.inspect}")
       elsif weather["feelslike_f"].to_i <= user.coldtemp
-        tops = user.tops.where(weather: 'cold')[0]
+        tops = user.tops.where(weather: 'Cold')[rand(user.tops.where(weather: 'Cold').size)]
         ret = tops ? tops.url : ""
         Rails.logger.debug("tops= #{tops.inspect}")
-      else tops = user.tops.where(weather: 'comfortable')[0]
+      else tops = user.tops.where(weather: 'Comfortable')[rand(user.tops.where(weather: 'Comfortable').size)]
         ret = tops ? tops.url : ""
         Rails.logger.debug("tops= #{tops.inspect}")
       end
@@ -58,14 +58,14 @@ class WeathersController < ApplicationController
       puts weather["feelslike_f"]
       # conditional statement for hot, middle, cool temp
       if weather["feelslike_f"].to_i >= user.hottemp
-        bottoms = user.bottoms.where(weather: 'hot')[3]
+        bottoms = user.bottoms.where(weather: 'Hot')[rand(user.bottoms.where(weather: 'Hot').size)]
         ret = bottoms ? bottoms.url : ""
         Rails.logger.debug("bottoms = #{bottoms.inspect}")
       elsif weather["feelslike_f"].to_i <= user.coldtemp
-        bottoms = user.bottoms.where(weather: 'cold')[0]
+        bottoms = user.bottoms.where(weather: 'Cold')[rand(user.bottoms.where(weather: 'Cold').size)]
         ret = bottoms ? bottoms.url : ""
         Rails.logger.debug("bottoms = #{bottoms.inspect}")
-      else bottoms = user.bottoms.where(weather: 'comfortable')[0]
+      else bottoms = user.bottoms.where(weather: 'Comfortable')[rand(user.bottoms.where(weather: 'Comfortable').size)]
         ret = bottoms ? bottoms.url : ""
         Rails.logger.debug("bottoms = #{bottoms.inspect}")
      end
