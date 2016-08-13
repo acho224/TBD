@@ -78,7 +78,7 @@ https://www.wunderground.com/weather/api/
 
 
 ## Sources
-**Access params values:**
+**Access Params Values:**
 http://stackoverflow.com/questions/13603570/how-to-access-param-values-in-controller-in-ruby-on-rails
 
 **Rails User Authentication**
@@ -86,7 +86,14 @@ https://www.codecademy.com/en/courses/rails-auth/lessons/authentication/exercise
 
 https://github.com/supritshah1289/Rails-Authentication-System
 
+**Random Array Item**
+http://rubyquicktips.com/post/2625525454/random-array-item
 
+**Delete Method**
+http://stackoverflow.com/questions/3763031/button-to-action-destroy-looks-for-show
+
+**Embedded Ruby Form**
+http://guides.rubyonrails.org/form_helpers.html
 
 
 
