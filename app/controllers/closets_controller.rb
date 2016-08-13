@@ -22,12 +22,16 @@ class ClosetsController < ApplicationController
   end
 
   def destroy
+    params
     puts params
 
-    @top = Top.find(params[:id])
-    # @bottom = Bottom.find(params[:id])
-    @top.destroy
-    # @bottom.destroy
+    if params[:type] == "top"
+      @top = Top.find(params[:id])
+      @top.destroy
+    else
+      @bottom = Bottom.find(params[:id])
+      @bottom.destroy
+    end
     redirect_to '/closet'
   end
 

@@ -12,14 +12,18 @@
   left: 20%;
 }
 
+#add {
+  padding-bottom: 15px;
+}
+
 .top_img {
   height:200px;
   width: 200px;
 }
 
 .bottom_img {
-  max-height:200px;
-  max-width: 200px;
+  height:200px;
+  width: 200px;
 }
 
 li {
@@ -32,4 +36,12 @@ li {
 
 #add_item {
   display: inline-block;
+}
+
+select {
+  width: 100px;
+}
+
+#save_item {
+  margin: 16px auto;
 }
