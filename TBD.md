@@ -30,10 +30,9 @@ Not everyone's body temperature fluctuates the same. What's considered hot for c
 User's start by logging in and entering some personal settings. These settings include: 
 
 - Temperature level that is considered hot
-- Humidity level that is considered as humid
 - Temperature level that is considered cold
 
-These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raining is greater than 40%, a suggestion will be made to bring an umbrella.
+These settings will be compared with the current weather and a suggestion will be made letting the user know what they should wear. eg. If it's considered "hot" a suggestion will be made to wear a short sleeve shirt. If the chance of raining is greater than 50%, a suggestion will be made to bring an umbrella.
 
 ## API
 https://www.wunderground.com/weather/api/
@@ -42,7 +41,6 @@ https://www.wunderground.com/weather/api/
 
 <img src="http://i.imgur.com/JzyDitu.jpg)" width="300" height="auto">
 
-## Approach
 
 ## Wireframe
 
@@ -61,14 +59,36 @@ https://www.wunderground.com/weather/api/
 
 ## Technologies Used
 
+- HTML/CSS
 - SQL
 - Ruby
 - Rails
-- Bootstrap
+- jQuery
+- Javascript
 
 ## Hurdles
 
+1) Creating a form using embedded Ruby to save items to database.
+   No controllers were generated for the Tops table and Bottoms table.
+   **Solution:** Used jQuery to get the needed values to perform post method.
+
+2) User ability to save to the correct table (tops/bottoms).
+   **Solution:** Used jQuery to get value from drop down menu. Passed the value
+   to controller using params and implemented in conditional statement.
+
+
 ## Sources
+**Access params values:**
+http://stackoverflow.com/questions/13603570/how-to-access-param-values-in-controller-in-ruby-on-rails
+
+**Rails User Authentication**
+https://www.codecademy.com/en/courses/rails-auth/lessons/authentication/exercises/authentication-authentication?action=resume
+
+https://github.com/supritshah1289/Rails-Authentication-System
+
+
+
+
 
 
 
