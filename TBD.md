@@ -95,7 +95,8 @@ http://stackoverflow.com/questions/3763031/button-to-action-destroy-looks-for-sh
 **Embedded Ruby Form**
 http://guides.rubyonrails.org/form_helpers.html
 
-
+**Weather Excerpt**
+https://en.wikipedia.org/wiki/Weather
 
 
 
