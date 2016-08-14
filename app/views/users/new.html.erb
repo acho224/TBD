@@ -2,18 +2,18 @@
   <div id="sign_up_container">
     <div id="sign_up_form">
 
-    <h3>Sign Up</h3>
-    <%= form_for(@user) do |f| %>
-      <%= f.text_field :fname, :placeholder => "First name" %>
-      <%= f.text_field :lname, :placeholder => "Last name" %>
-      <%= f.email_field :email, :placeholder => "Email" %>
-      <%= f.password_field :password, :placeholder => "Password" %>
-      <%= f.number_field :hottemp, :placeholder => "Hot Temp For You °F" %>
-      <%= f.number_field :coldtemp, :placeholder => "Cold Temp For You °F" %>
-      <%= f.radio_button(:gender, "female") %><%= label_tag(:gender_female, "Female") %>
-      <%= f.radio_button(:gender, "male") %><%= label_tag(:gender_male, "Male") %><br><br>
+    <h3><span class="bold">Sign Up</span></h3>
+      <%= form_for(@user) do |f| %>
+        <%= f.text_field :fname, :placeholder => "First name" %>
+        <%= f.text_field :lname, :placeholder => "Last name" %>
+        <%= f.email_field :email, :placeholder => "Email" %>
+        <%= f.password_field :password, :placeholder => "Password" %>
+        <%= f.number_field :hottemp, :placeholder => "Hot Temp For You °F" %>
+        <%= f.number_field :coldtemp, :placeholder => "Cold Temp For You °F" %>
+        <%= f.radio_button(:gender, "female") %><%= label_tag(:gender_female, "Female") %>
+        <%= f.radio_button(:gender, "male") %><%= label_tag(:gender_male, "Male") %><br><br>
 
-      <%= f.submit "Create an account", class: "btn-submit" %>
+        <%= f.submit "Create an account", class: "btn-submit" %>
     <% end %>
 
     </div>

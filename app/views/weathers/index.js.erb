@@ -1,2 +1,24 @@
 $('#results').empty(); // clears results div before adding new lyrics
 $("#results").append("<%= j render(partial: 'results') %>"); // add partial _results.html.erb
+
+// show umbrella on if precipitaion is over 40%
+let pop = $('#pop').text().split(" ")[3]
+let popInt = parseInt(pop);
+
+function umbrella() {
+  if (popInt <= 10){
+    $('#umbrella_image').css('display', 'none');
+  }
+}
+umbrella();
+
+// show new outfit
+
+let temp = $('#heat_index').text().split(" ")[2]
+let tempInt = parseInt(temp)
+
+$('.new_outfit').click(()=>{
+  console.log('Hello')
+
+})
+

@@ -2,7 +2,7 @@
   <div id="login_container">
     <div id="login_form">
 
-      <h3>Log in</h3>
+      <h3><span class="bold">Log in</span></h3>
       <%= form_for(:session, url: login_path) do |f| %>
       <%= f.email_field :email, :placeholder => "Email" %>
       <%= f.password_field :password, :placeholder => "Password" %>

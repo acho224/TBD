@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+/*body {
+  background-image: url('http://i.giphy.com/3oEjI3nWWIFGN7d8Ry.gif');
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+}
+*/
 #logo_image {
   height: 100px;
   width: auto;
@@ -36,10 +43,11 @@
   display: block;
   margin: 8px 50px;
   padding-top: 10px;
+  font-size: 20px;
 }
 
 a {
-  width: 75px;
+  width: 100px;
 }
 
 .tops {
