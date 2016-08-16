@@ -50,4 +50,7 @@ class ClosetsController < ApplicationController
   #   bottom.update(bottom_params)
   # end
 
+  # def fake method
+  # end
+
 end
