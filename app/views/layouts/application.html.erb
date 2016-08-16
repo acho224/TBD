@@ -3,7 +3,9 @@
   <head>
     <title>TBD</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -11,43 +13,32 @@
   </head>
 
   <body>
-  <div id="logo_container">
-    <%= image_tag "tbd.png", :id => "logo_image"  %>
-
-    <div id="nav_container">
-
-    <% if session[:user_id] %>
-      <a href="/">Home</a>
-      <a href="/weather">Weather</a>
-      <a href="/closet">My Closet</a>
-
-    <% else %>
-      <a href="/">Home</a>
-      <a href="/signup">Sign Up</a>
-      <a href="/login">Login</a>
-      <a href="/weather">Weather</a>
-    <% end %>
-
+  <div>
+    <div id="logo_container">
+      <a href="/">:TBD<%#= image_tag "tbd.png", :id => "logo_image"  %></a>
     </div>
+
+    <div id="welcome_container">
+      <ul id="nav_menu">
+        <% if current_user %>
+          <li class="bold">Welcome <%= current_user.fname.titleize%> </li>
+          <li><a href="/weather">Weather</a></li>
+          <li><a href="/closet">My Closet</a></li>
+          <li><%= link_to "Logout", {:controller=> "sessions", :action=> "destroy"}, :method => :delete, :id => "logout" %></li>
+        <%else%>
+            <li class="bold">Welcome Guest</li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/weather">Weather</a></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="clear"></div>
   </div>
 
-  <div id="welcome_container">
-    <% if current_user %>
-      <p class="welcome"><span class="bold">Welcome <%= current_user.fname.titleize%> </span> </p>
-      <%= link_to "Logout", {:controller=> "sessions", :action=> "destroy"}, :method => :delete, :id => "logout" %>
-    <%else%>
-      <p class="welcome"><span class="bold">Welcome Guest</span></p>
-    <% end %>
-  </div>
-
-  <div class="clear">
-  </div>
-
-
-  <div class="clear">
-  </div>
-
+  <div class="main_section">
     <%= yield %>
+  </div>
 
   </body>
 

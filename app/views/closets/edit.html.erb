@@ -1,0 +1,18 @@
+<%= form_for(@item) do |f| %>
+    <div id="item_container">
+      <h4>Update Item</h4>
+     </div>
+  <% end %>
+
+ <% f.hidden_field type: @item_type %>
+
+  <div class="field">
+    <%= f.label :weather %>
+    <%= f.text_field :weather %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

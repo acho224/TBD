@@ -29,6 +29,15 @@ $(document).ready(function() {
         location.reload()
       })
     })
+
+  // $('#test').click(()=>{
+  //   console.log ($(this))
+    // let update = {
+    //   weather: $('#update_tops').val(),
+    //   table: "tops"
+    //   }
+
+  // })
 });
 
 

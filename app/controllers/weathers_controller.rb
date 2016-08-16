@@ -1,4 +1,4 @@
-class WeathersController < ApplicationController
+  class WeathersController < ApplicationController
     # API_KEY = ENV["WUNDER_KEY"]
 
   def index

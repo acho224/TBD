@@ -1,58 +1,56 @@
-<div class="main">
 
 <div class="row" id="closet_container">
   <h4><span class="bold">My Closet</span></h4>
 
-<div class="row" id="add_item">
+  <div class="row" id="add_item">
 
-<p id="add">ADD AN ITEM</p>
+    <p id="add">ADD AN ITEM</p>
 
-<select id="choose_table" name="select">
-  <option disabled selected>Choose</option>
-  <option>Top</option>
-  <option>Bottom</option>
-</select>
+    <select id="choose_table" name="select">
+      <option disabled selected>Choose</option>
+      <option>Top</option>
+      <option>Bottom</option>
+    </select>
 
 
-<select id="choose_length" name="select">
-  <option disabled selected>Length</option>
-  <option>Short</option>
-  <option>Long</option>
-</select>
+    <select id="choose_length" name="select">
+      <option disabled selected>Length</option>
+      <option>Short</option>
+      <option>Long</option>
+    </select>
 
-<select id="choose_weather" name="select">
-  <option disabled selected>Occasion</option>
-  <option>Hot</option>
-  <option>Comfortable</option>
-  <option>Cold</option>
-</select>
+    <select id="choose_weather" name="select">
+      <option disabled selected>Occasion</option>
+      <option>Hot</option>
+      <option>Comfortable</option>
+      <option>Cold</option>
+    </select>
 
-<input id="url_submit" type="text" placeholder="Enter Image URL Here">
-<button id="save_item">SAVE</button>
+    <input id="url_submit" type="text" placeholder="Enter Image URL Here">
+    <button id="save_item">SAVE</button>
 
-</div>
-
-<div class="row">
-  <div class="six columns" id="my_tops">
-    <h5><span class="bold">Tops</span></h5>
-    <ul>
-      <% @my_tops.each do |top| %>
-        <li><img class="top_img" src="<%= top.url %>"></li>
-        <%= button_to "delete", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :top, id: top.id}%>
-      <% end %>
-    </ul>
   </div>
 
-<div class="six columns" id="my_bottoms">
-  <h5><span class="bold">Bottoms</span></h5>
-  <ul>
-    <% @my_bottoms.each do |bottom| %>
-      <li><img class="bottom_img" src="<%= bottom.url %>"></li>
-      <%= button_to "delete", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :bottom, id: bottom.id} %>
-    <% end %>
-  </ul>
+  <div class="row">
+    <div class="six columns" id="my_tops">
+      <h5><span class="bold">Tops</span></h5>
+      <ul>
+        <% @my_tops.each do |top| %>
+          <li><img class="top_img" src="<%= top.url %>"></li>
+          <%= button_to "remove", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :top, id: top.id}%>
+        <% end %>
+      </ul>
+    </div>
 
-      </div>
+  <div class="six columns" id="my_bottoms">
+    <h5><span class="bold">Bottoms</span></h5>
+    <ul>
+      <% @my_bottoms.each do |bottom| %>
+        <li><img class="bottom_img" src="<%= bottom.url %>"></li>
+        <%= button_to "remove", {:controller => :closets, :action => 'destroy'}, :method => :delete, :class => 'delete_btn', params: {type: :bottom, id: bottom.id} %>
+      <% end %>
+    </ul>
+
     </div>
   </div>
 </div>

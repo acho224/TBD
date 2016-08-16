@@ -27,9 +27,14 @@
 
 #logo_container {
   float: left;
-  padding: 10px 10px;
+  font-family: 'Oswald',Helvetica, Arial, sans-serif;
+  font-size: 90px;
+  margin-left: 20px;
 }
-
+#logo_container a{
+  color: #000000;
+  text-decoration: none;
+}
 #welcome_container {
   float: right;
   margin-right: 30px;
@@ -39,26 +44,44 @@
   clear: both;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 #nav_container a{
   display: block;
   margin: 8px 50px;
   padding-top: 10px;
   font-size: 20px;
 }
-
+#nav_menu li{
+  margin-bottom: 5px;
+}
 a {
   width: 100px;
 }
-
-.tops {
-  max-width: 200px;
-  max-height: 200px;
+sup{
+  line-height: 1em;
 }
-
-.bottoms {
-  max-width: 200px;
-  max-height: 200px;
+.main_section{
+  position: relative;
+  width: 99%;
+  top: -10px;
+  margin: 0 auto;
 }
-
-
-
+.inner_container {
+  text-align: left;
+  width: 97%;
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 520px){
+/*  #logo_image{
+    width: 130px;
+    height: auto;
+  }*/
+  #logo_container{
+    font-size: 60px;
+  }
+}

@@ -1,6 +1,6 @@
 
-<div id="zipform_container">
-<h4><span class="bold">Check The Weather</span></h4><br>
+<div class="inner_container" id="weather_zip_container">
+  <h4><span class="bold">Check The Weather</span></h4>
 
   <%= form_tag("/weather", method:"get", remote:true) do %>
     <%= label_tag(:zipcode, "Enter Zipcode:") %>
@@ -10,7 +10,6 @@
 
 </div>
 
-<br>
 <div id="results">
 
 </div>

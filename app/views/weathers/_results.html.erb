@@ -9,6 +9,7 @@
       <img id="icon" src="<%= @weather_results['icon_url'].html_safe %>">
     </div>
   </div>
+
   <div class="six columns">
     <div id="umbrella_container">
       <%= image_tag "umbrella.png", :id => "umbrella_image" %>
@@ -44,7 +45,7 @@
 
 <% if session[:user_id] %>
   <div id="dress_container">
-    <%= button_tag "Choose Another Outfit", :class=>'new_outfit' %>
+    <%#= button_tag "Choose Another Outfit", :class=>'new_outfit' %>
     <h4><span class="bold">:TBD Suggestion:</span></h4>
     <img class="tops" src="<%= @top_img_path %>"><br>
     <img class="bottoms" src="<%= @bottoms_img_path %>">

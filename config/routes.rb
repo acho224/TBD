@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/closet' => 'closets#index'
   post '/closet' => 'closets#create'
   delete '/closet' => 'closets#destroy'
-  resources :closet
+  resources :closets
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

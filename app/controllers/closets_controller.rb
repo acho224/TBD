@@ -35,4 +35,19 @@ class ClosetsController < ApplicationController
     redirect_to '/closet'
   end
 
+  # def edit
+  #   @type = params[:type]
+
+  #   if @type == :bottom
+  #     @item = Bottom.find(params[:id])
+  #   elsif @type == :top
+  #     @item = Top.find(params[:id])
+  #   end
+  # end
+
+  # def update
+  #   bottom = Bottom.find(params[:id])
+  #   bottom.update(bottom_params)
+  # end
+
 end
