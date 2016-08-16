@@ -1,0 +1,272 @@
+/* line 5, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+#closet_container {
+  text-align: center;
+}
+
+/* line 8, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+#add {
+  padding-bottom: 15px;
+}
+
+/* line 11, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.tops {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* line 16, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.bottoms {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* line 20, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.top_img {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 25, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.bottom_img {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 31, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.tops {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* line 36, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.bottoms {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* line 40, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 44, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+.delete_btn {
+  margin-bottom: 50px;
+}
+
+/* line 48, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+#add_item {
+  display: inline-block;
+}
+
+/* line 52, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+select {
+  width: 118px;
+  font-size: 1em;
+  margin: 0px 5px;
+}
+
+/* line 57, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+#url_submit {
+  font-size: 1em;
+  width: 400px;
+}
+
+/* line 62, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+#save_item {
+  margin: 16px auto;
+}
+
+@media screen and (max-width: 520px) {
+  /* line 67, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/closets.scss */
+  #closet_container select {
+    width: 100%;
+    margin: 0 0 1.5rem;
+  }
+}
+/* line 4, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/sessions.scss */
+#login {
+  text-align: center;
+}
+/* line 4, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/users.scss */
+#sign_up_container {
+  text-align: center;
+}
+
+/* line 8, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/users.scss */
+label, legend {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+/* line 15, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/users.scss */
+#main_description p {
+  margin-bottom: 15px;
+}
+
+/* line 18, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/users.scss */
+.footer {
+  font-size: .8em;
+  text-align: center;
+}
+/* line 4, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+h3 {
+  text-align: center;
+}
+
+/* line 7, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#weather_zip_container {
+  text-align: center;
+}
+
+/* line 11, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#results {
+  text-align: center;
+}
+
+/* line 15, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#small_font {
+  font-size: 15px;
+}
+
+/* line 18, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+form {
+  margin-bottom: 0px;
+}
+
+/* line 22, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+  margin-bottom: .5rem;
+}
+
+/* line 26, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+input {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+}
+
+/* line 32, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: block;
+}
+
+/* line 36, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#dress_container {
+  margin-top: 50px;
+}
+
+/* line 40, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  width: 20px;
+}
+
+/* line 45, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#umbrella_image {
+  height: 43px;
+  width: 43px;
+  margin: 5px 10px;
+}
+
+/* line 51, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#icon_container {
+  width: 10%;
+  margin: 0 48%;
+}
+
+/* line 56, /Users/Arlen/code/wdi/tbd/app/assets/stylesheets/weathers.scss */
+#dress_container button {
+  width: auto;
+  margin: 30px auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/*body {
+  background-image: url('http://i.giphy.com/3oEjI3nWWIFGN7d8Ry.gif');
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+}
+*/
+
+#logo_image {
+  height: 100px;
+  width: auto;
+}
+
+#logo_container {
+  float: left;
+  font-family: 'Oswald',Helvetica, Arial, sans-serif;
+  font-size: 90px;
+  margin-left: 20px;
+}
+#logo_container a{
+  color: #000000;
+  text-decoration: none;
+}
+#welcome_container {
+  float: right;
+  margin-right: 30px;
+  padding: 5px;
+}
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#nav_container a{
+  display: block;
+  margin: 8px 50px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+#nav_menu li{
+  margin-bottom: 5px;
+}
+a {
+  width: 100px;
+}
+sup{
+  line-height: 1em;
+}
+.main_section{
+  position: relative;
+  width: 99%;
+  top: -10px;
+  margin: 0 auto;
+}
+.inner_container {
+  text-align: left;
+  width: 97%;
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 520px){
+/*  #logo_image{
+    width: 130px;
+    height: auto;
+  }*/
+  #logo_container{
+    font-size: 60px;
+  }
+}
